@@ -1,4 +1,6 @@
-📌 1. Crea y llena una tabla de empleados
+# Ejercicio 01
+
+## 📌 Crea y llena una tabla de empleados
 
 1️⃣ Crea una base de datos llamada empresa.
 
@@ -12,6 +14,9 @@
 ```
 
 3️⃣ Inserta al menos 5 empleados.
+
 4️⃣ Consulta todos los empleados con salario mayor a $50,000.
+
 5️⃣ Actualiza el salario de un empleado específico.
+
 6️⃣ Elimina un empleado de la tabla.
