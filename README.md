@@ -13,6 +13,11 @@
 - Crear bases de datos de práctica
 - Hacer proyectos funcionales
 
+## Instalación en Linux
+- Documentacion oficial de instalación: https://dev.mysql.com/doc/refman/8.4/en/linux-installation-apt-repo.html
+
+
+
 ----
 ## Apuntes
 
