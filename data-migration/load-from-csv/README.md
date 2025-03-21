@@ -1,4 +1,4 @@
-#📌 Exportar datos de Excel a MySQL (Carga de datos)
+# 📌 Exportar datos de Excel a MySQL (Carga de datos)
 
 1️⃣ Descargá o creá un archivo Excel con una hoja llamada productos y las siguientes columnas:
 ```
