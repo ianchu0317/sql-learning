@@ -5,6 +5,8 @@
 - Tutorial útil MySQL Workbench: https://www.youtube.com/watch?v=2mbHyB2VLYY&ab_channel=DatabaseStar
 - Descarga de MySQL: https://www.mysql.com/downloads/
 - Tutorial instalación MySQL en Windows: https://www.w3schools.com/mysql/mysql_install_windows.asp
+- Documentación de Python MySQL: https://dev.mysql.com/doc/connector-python/en/
+
 
 ## Método de estudio
 - Leer apuntes, tutoriales y tomar nota
