@@ -1,4 +1,4 @@
-# Aprendizaje y apuntes de SQL
+ Aprendizaje y apuntes de SQL
 
 ## Enlaces útiles
 - Tutorial de SQL: https://www.w3schools.com/sql/default.asp
@@ -29,5 +29,76 @@ El usuario accedido dependiendo de su permiso puede realizar consultas o "querie
 Las queries se pueden automatizar con "scripts" y guardar en archivos apartes para poder utilizar más tarde. Los databases también se pueden guardar o "exportar".
 Los archivos exportados tanto scripts como databases tienen la extensión de `.sql` (MySQL).
 
---- 
-## Syntaxis
+---
+
+# Administración
+
+## Instalación de Servidor MySQL
+
+Crear password en `mysql_secure_installation`
+
+```
+sudo apt install mysql-server
+sudo ststemctl start mysql
+sudo mysql_secure_installation
+```
+
+Crear escucha en todo el servidor
+```
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+```
+
+Y cambiar contenido 
+
+```
+bind-address = 0.0.0.0
+```
+
+## Conectar desde root
+```
+sudo mysql -u root
+```
+El comando funciona cambiando root por cualquier otro usuario
+
+Para conectar desde otro dispositivo cliente se necesitan especificar la ip (hostname) y el puerto.
+Si el usuario tiene contraseña, es necesario ingresar el parámetro `-p`
+```
+sudo mysql -u username -h hostbame -P port -p
+```
+
+## Crear usuario
+Si se usa `%` permite la escucha y conexión en cualquier address. 
+OJO **`localhost`** no está incluido por lo que hay que crear otro aparte, son como dos usuarios distintos (aunque tengan el mismo nombre). 
+```
+CREATE USER 'username' @ '%' IDENTIFIED BY 'password';
+```
+
+Para dar permisos al usuario creado
+```
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'root_password';
+FLUSH PRIVILEGES
+```
+
+Todas las credenciales se encuentran en la tabla user. 
+
+
+## Listar elementos
+
+- Listar databases
+```
+SHOW DATABASES;
+```
+
+- Listar Tablas (estando en un db)
+```
+SHOW TABLES;
+```
+
+- Listar columnas
+```
+SHOW COLUMNS FROM `table_name`;
+```
+
+
+
+ 
