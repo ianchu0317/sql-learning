@@ -56,7 +56,10 @@ my_cmd = ("INSERT INTO table_name "
 my_data = {col1: "data1", col2: 2}
 
 cursor.execute(my_cmd, my_data)
- 
+```
+También acordarse de guardar los datos luego de ingresarlas
+```
+cursor.commit()
 ```
 
 ## QUERY
@@ -65,8 +68,11 @@ La sintaxis es la misma utilizando tuplas y formatea solo
 my_query = ("SELECT col1, col2 FROM table_name "
             "WHERE col1 BETWEEN %s AND %s")
 cursor.execute(my_query, (data1, data2))
+
+for row in cursor:
+    ...
 ```
 Si hay varias filas devueltas, se puede esperar un objeto iterable (como lista),
 y como se seleccionó varias columnas, entonces se pueden esperar tuplas. 
-REsumiendo, podemos esperar un dato así `[(data1, data2), ..., (data1, data2)]`
+REsumiendo, podemos esperar un dato así `[(data1, data2), ..., (data1, data2)]` almacenado en el mismo `cursor`
 
