@@ -1,4 +1,4 @@
- Aprendizaje y apuntes de SQL
+# Aprendizaje y apuntes de SQL
 
 ## Enlaces útiles
 - Tutorial de SQL: https://www.w3schools.com/sql/default.asp
