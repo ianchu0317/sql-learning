@@ -75,8 +75,8 @@ CREATE USER 'username' @ '%' IDENTIFIED BY 'password';
 
 Para dar permisos al usuario creado
 ```
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'root_password';
-FLUSH PRIVILEGES
+GRANT ALL PRIVILEGES ON *.* TO 'ianchu0317'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
 ```
 
 Todas las credenciales se encuentran en la tabla user. 
