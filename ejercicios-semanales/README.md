@@ -7,6 +7,18 @@ El objetivo es mantener el conocimiento de realizar consultas con `JOIN`, `GROUP
 
 El entorno de prueba está configurado con Docker.
 
+Para iniciar la base de datos:
+```bash
+docker compose up -d
+```
+
+Para conectar a la base de datos:
+```bash
+mysql -h 127.0.0.1 -u user -p 
+```
+
+Y la contraseña de acceso es `password`.
+
 ---
 
 ## Tablas
